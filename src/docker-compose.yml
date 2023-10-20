@@ -1,0 +1,12 @@
+# Vamos exercitar a construção de projetos NodeJS em containers Docker. 
+# Faça o fork do projeto conversão temperatura (https://github.com/KubeDev/conversao-temperatura), 
+# crie o Dockerfile e o docker compose para subir a aplicação em containers.
+
+version: '3.1'
+
+services:
+  conversao-temperatura:
+    image: brvendrametto/conversao-temperatura:latest
+    ports:
+      - 80:8080
+    
